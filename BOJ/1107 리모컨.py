@@ -1,11 +1,15 @@
+# 22:44
+
 N = int(input())
 M = int(input())
 if M:
-    A = set(map(int, input().split()))
+    A = list(map(int, input().split()))
 else:
-    A = ()
-B = set([i for i in range(10)])
-B = list(B - A)
+    A = []
+B = []
+for a in range(10):
+    if a not in A:
+        B.append(a)
 ans = abs(N - 100)
 
 
