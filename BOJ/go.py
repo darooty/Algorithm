@@ -15,6 +15,6 @@ def go(start, cnt, rlt):
         return
     for i in range(start, size):
         go(i+1, cnt+1, rlt+E[i]**2)
-
+a=1
 go(0, 0, 0)
 print(ans)
